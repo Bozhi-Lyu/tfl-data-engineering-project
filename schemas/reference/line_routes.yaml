@@ -1,0 +1,15 @@
+table: line_routes
+grain: one row per line route
+required_columns:
+  - line_id
+  - mode
+  - direction
+  - origination_name
+  - destination_name
+
+output_columns:
+  line_id: string
+  mode: string
+  direction: string
+  origination_name: string
+  destination_name: string

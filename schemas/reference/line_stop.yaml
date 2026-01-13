@@ -1,0 +1,16 @@
+table: line_stop_snapshot
+grain: one row per stop per line per direction
+
+required_columns:
+  - snapshot_date
+  - line_id
+  - direction
+  - stop_id
+  - stop_sequence
+
+output_columns:
+  snapshot_date: string
+  line_id: string
+  direction: string
+  stop_id: string
+  stop_sequence: int

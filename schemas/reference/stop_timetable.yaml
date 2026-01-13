@@ -1,0 +1,22 @@
+table: stop_timetable_snapshot
+grain: one row per scheduled arrival per stop per line per service day
+
+required_columns:
+  - snapshot_date
+  - line_id
+  - stop_id
+  - stop_sequence
+  - direction
+  - service_day
+  - arrival_time
+  - arrival_minutes
+
+output_columns:
+  snapshot_date: string
+  line_id: string
+  stop_id: string
+  stop_sequence: int
+  direction: string
+  service_day: string
+  arrival_time: string
+  arrival_minutes: int
