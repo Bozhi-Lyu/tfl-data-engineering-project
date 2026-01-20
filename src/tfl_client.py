@@ -21,6 +21,7 @@ def get_stops_sequence(id: str = None, app_id: str = None, app_key: str = None):
 
 
 def get_arrivals(ids=None, app_id: str = None, app_key: str = None):
+    # Get the list of arrival predictions for given line ids based at the given stop
     if not ids:
         raise ValueError("ids must be provided")
 

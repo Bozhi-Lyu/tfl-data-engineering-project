@@ -20,8 +20,12 @@ venv.bak/
 .vscode/
 
 # Project Data
-data/reference
+data/reference/
+data/bronze/
+data/silver/
+data/gold/
 Artifacts/
 
 # parquet temp
+*.parquet
 *.parquet.tmp

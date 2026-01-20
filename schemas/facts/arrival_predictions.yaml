@@ -1,21 +1,36 @@
 table: arrival_predictions
+layer: bronze
 grain: one row per vehicle-stop ETA snapshot
+
 columns:
-  prediction_time:
+  ingestion_ts:
     type: datetime
     nullable: false
+
   vehicle_id:
     type: string
     nullable: false
+
   line_id:
     type: string
     nullable: false
+
   stop_id:
     type: string
     nullable: false
+
+  stop_name:
+    type: string
+    nullable: true
+
+  direction:
+    type: string
+    nullable: true
+
   time_to_station_sec:
     type: int
     nullable: false
+
   expected_arrival:
-    type: string
+    type: datetime
     nullable: false
