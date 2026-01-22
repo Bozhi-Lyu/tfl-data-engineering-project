@@ -29,3 +29,7 @@ Artifacts/
 # parquet temp
 *.parquet
 *.parquet.tmp
+
+# DuckDB local databases
+*.duckdb
+*.duckdb.wal

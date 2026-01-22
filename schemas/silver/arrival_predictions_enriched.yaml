@@ -1,0 +1,48 @@
+table: arrival_predictions_enriched
+layer: silver
+grain: one row per vehicle-stop scheduled arrival
+
+columns:
+  scheduled_arrival_ts:
+    type: datetime
+    nullable: false
+
+  ingestion_ts:
+    type: datetime
+    nullable: false
+
+  expected_arrival_ts:
+    type: datetime
+    nullable: false
+
+  vehicle_id:
+    type: string
+    nullable: false
+
+  line_id:
+    type: string
+    nullable: false
+
+  stop_id:
+    type: string
+    nullable: false
+
+  direction:
+    type: string
+    nullable: true
+
+  time_to_station_sec:
+    type: int
+    nullable: false
+
+  predicted_eta_sec:
+    type: int
+    nullable: false
+
+  schedule_delta_sec:
+    type: int
+    nullable: false
+
+  prediction_lead_time_sec:
+    type: int
+    nullable: false

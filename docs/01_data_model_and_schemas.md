@@ -73,6 +73,14 @@ Not all line–stop pairs have scheduled timetables. The ingestion layer treats 
 
 ## silver
 
+- Read Bronze arrival predictions (append-only parquet)
+- Parse and normalize timestamps
+- Deduplicate overlapping predictions (keep the latest one)
+- Join with reference timetable data
+- Compute schedule vs prediction deltas
+
+Output a clean, analytics-ready fact table
+
 ## gold
 
 
